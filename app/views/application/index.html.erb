@@ -1,3 +1,33 @@
-<h1>Bienvenido a mi applicación en Rails.</h1>
-<a href="/vista">Ir a la vista.</a>
-<a href="/mi/ruta/es/muy/larga">Ir a la ruta muy larga.</a>
+<div class="container">
+	<section class="introduction">
+		<div>
+			<h1>Bienvenido a Twitter.</h1>
+			<p class="text">Conéctate con tus amigos y otras personas fascinantes. Obtén actualizaciones instantáneas de las cosas que te interesan. Mira los eventos que se están desarrollando, en tiempo real, desde todos los ángulos.</p>
+		</div>
+		<div class="tweet">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+			<p class="data">Tweet y foto de @anonimo</p>
+			<p class="data">5:25PM - 28 nov 2014</p>
+		</div>
+	</section><!--
+
+	--><section class="forms">
+		<div>
+			<form action="/login" method="post">
+				<input type="text" placeholder="Correo electrónico">
+				<input type="password" placeholder="Contraseña">
+				<input type="submit" value="Iniciar sesión">
+			</form>
+		</div>
+
+		<div>
+			<h2>¿Eres nuevo en Twitter? <span>Regístrate</span></h2>
+			<form action="/signup" method="post">
+				<input type="text" placeholder="Nombre completo">
+				<input type="text" placeholder="Correo electrónico">
+				<input type="password" placeholder="Contraseña">
+				<input type="submit" value="Registrarse">
+			</form>
+		</div>
+	</section>
+</div>

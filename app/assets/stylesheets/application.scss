@@ -10,6 +10,79 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require normalize
  *= require_tree .
  *= require_self
  */
+
+html {
+  font-size:16px;
+  height:100%;
+  body {
+  	background:url("AR_ES_MEX_LATAM_3.jpg") center top no-repeat;
+  	background-size:cover;
+	  font:normal 62.5% 'Helvetica Neue', Tahoma, Arial, sans-serif;
+	  height:100%;
+	  margin:0;
+	}
+}
+
+.container {
+	border:1px solid blue;
+	margin:0 auto;
+	max-width:1024px;
+	width:100%;
+	.introduction {
+		color:white;
+		display:inline-block;
+		width:65%;
+		h1 {
+			font-size:3.8em;
+		}
+		p.text {
+			font-size:2.1em;
+		}
+		.tweet {
+			font-size:1.4em;
+			.data {
+				font-size:0.92857142857143em;
+				text-decoration:underline;
+			}
+		}
+	}
+	.forms {
+		display:inline-block;
+		vertical-align:top;
+		width:35%;
+		div {
+			background-color:white;
+			display:inline-block;
+			form {
+				display:block;
+				width:100%;
+				input {
+					border:1px solid #ccd6dd;
+					border-radius:3px;
+					color:#292f33;
+					font-size:1.3em;
+					outline:none;
+					padding:4px;
+					&:focus {
+						box-shadow:0 0 12px rgba(112, 188, 114, .7);
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -4,6 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
   def index
+  	# Este es el index de la aplicación web, TWITTER.
   end
 
   def vista
