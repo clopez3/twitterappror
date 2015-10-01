@@ -10,13 +10,18 @@
 			<p class="data">5:25PM - 28 nov 2014</p>
 		</div>
 	</section><!-- Hack para eliminar el espacio que se genra cuando se usa display: inline block
-	
 	--><section class="forms">
 		<div>
 			<form action="/login" method="post">
 				<input type="text" placeholder="Correo electrónico">
-				<input type="password" placeholder="Contraseña">
-				<input type="submit" value="Iniciar sesión">
+				<input type="password" placeholder="Contraseña" class="medium"><!-- Hack para eliminar el espacio que se genera cuando se usa display: inline block
+			--><input type="submit" value="Iniciar sesión">
+			<label>
+				<input type="checkbox" checked="checked" name="remember_me">
+				Recordar mis datos
+			</label>
+			<span> · </span>
+			<a href="#">¿Olvidaste tu contraseña?</a>
 			</form>
 		</div>
 	
