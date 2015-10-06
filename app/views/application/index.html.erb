@@ -20,9 +20,8 @@
 				<%= text_field(:correo, "", placeholder: "Correo electrónico") %>
 				<%= password_field_tag(:clave, "", placeholder: "Contraseña", class: "medium") %><!-- Hack para eliminar el espacio que se genera cuando se usa display: inline block
 			 --><%= submit_tag("Iniciar sesión") %>
-			 	<%= check_box_tag(:remember_me) %>
+			 	<%= check_box_tag(:remember_me, "", checked: "checked") %>
 			 	<%= label_tag(:remember_me, "Recordar mis datos") %>
-			 				</label>
 			<span>·</span>
 			<a href="#">¿Olvidaste tu contraseña?</a>
 			<% end %>
