@@ -48,41 +48,40 @@ html {
     	a {
     		color:#2b7bb9;
     		display:block;
-    		font-size:13px;
-    		padding:8px 10px;
+    		font-size:1.3em;
+    		padding:10px;
     		text-decoration:none;
     	}
     }
 }
 
 .container {
-	border:1px solid blue;
-	margin:120px auto 0 auto;
+	margin:12em auto 0 auto;
 	max-width:838px;
 	width:100%;
 	.introduction {
 		color:white;
 		display:inline-block;
-		width:520px;
+		width:62.052505966%;
 		h1 {
 			font:bold 3.8em Arial, sans-serif;
 			margin-top: 0;
 		}
 		p.text {
 			font:300 2.1em Arial, sans-serif;
-			line-height: 31px;
-    		width: 470px;
+			line-height: 1.3em;
+    		width: 90.384615384%;
 		}	}
 	.forms {
 		display:inline-block;
-		margin-left:15px;
+		margin-left:0.9375em;
 		vertical-align:top;
-		width:302px;
+		width:36.038186157%;
 		div {
 			background-color:white;
-			border-radius:4px;
+			border-radius:0.4em;
 			display:inline-block;
-			margin-bottom:11px;
+			margin-bottom:1.1em;
 			h2 {
 				border-bottom:1px solid #e1e8ed;
 				margin:0;
@@ -174,6 +173,25 @@ html {
 		.data {
 		font-size:0.92857142857143em;
 		text-decoration:underline;
+		}
+	}
+}
+@media all and (max-width:800px) {
+	body {
+		background:url("AR_ES_MEX_LATAM_1.jpg") center top no-repeat;
+		background-size:cover;
+	}
+	.container {
+		.introduction {
+			h1 {
+				font-size:2.2em;
+				margin-left:16px;
+			}
+			p.text {
+				font:300 1.3em Arial, sans-serif;
+				line-height:1.5;
+				margin-left:16px;
+			}
 		}
 	}
 }
