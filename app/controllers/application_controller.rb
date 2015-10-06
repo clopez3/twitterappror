@@ -7,15 +7,18 @@ class ApplicationController < ActionController::Base
   	# Este es el index de la aplicación web, TWITTER.
   end
 
-  def vista
-  	puts "****************************************"
-  	puts "Acaban de entrar en la rubta /vista"
-  	render "/vista"
+  def data0
+    @correo = params[:correo]
+    @clave = params[:clave]
+    render "datos"
   end
 
-  def rutas
-  	puts "*******************"
-  	puts "¡Acaban de entrar en un ruta muy larga!"
+  def data
+    puts "******************************"
+    puts params[:nombre]
+    puts params[:correo]
+    puts params[:clave]
+    redirect_to "/"
   end
 
 end
