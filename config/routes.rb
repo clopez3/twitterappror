@@ -3,10 +3,8 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   root "application#index"
-
-  get "/vista" => "application#vista"
-
-  get "/mi/ruta/es/muy/larga" => "application#rutas"
+  post '/login' => "application#data0"
+  post '/signup' => "application#data"
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
