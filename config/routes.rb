@@ -5,7 +5,9 @@ Rails.application.routes.draw do
   root "application#index"
   post '/login' => "application#data0"
   post '/signup' => "application#data"
-
+  get '/calculadora' => "application#calculadora"
+  post '/calculo' => "application#calculo"
+  
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
