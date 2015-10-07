@@ -1,0 +1,11 @@
+<div class="container">
+	<div class="calculadora">
+		<%= form_tag("/calculo", method: "post") do %>
+  		<%= number_field(:valor0, "", placeholder: "Ingresa un valor") %>
+  		<%= select_tag(:operador, options_for_select([['Suma', 1],['Resta', 2],['Multi', 3],['Divi', 4]])) %>
+  		<%= number_field(:valor1, "", placeholder: "Ingresa otro valor") %>
+  		<%= submit_tag("Calcular") %>
+		<% end %>
+		<div class="resultado"><%= @total %></div>
+	</div>
+</div>
