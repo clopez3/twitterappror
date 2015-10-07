@@ -21,4 +21,24 @@ class ApplicationController < ActionController::Base
     redirect_to "/"
   end
 
+  def calculadora
+    render "calculadora"
+  end
+
+  def calculo
+    valor0 = params[:valor0][0].to_i
+    valor1 = params[:valor1][0].to_i
+    operador = params[:operador].to_i
+    if operador == 1
+      @total = valor0 + valor1
+    elsif operador == 2
+      @total = valor0 - valor1
+    elsif operador == 3
+      @total = valor0 * valor1
+    elsif operador == 4
+      @total = valor0 / valor1
+    end
+    render "calculadora"    
+  end
+    
 end
